@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "custom-font";
+    src: url("custom-font.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Rest of Stylesheet */
+
+body {
+    font-family: "custom-font";
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+h1 {
+    font-size: 180px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.subhead {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.fontname {
+    white-space: nowrap;
+    font-size: 110px;
+    color: rgb(0, 0, 0);
+    margin-top: 250px;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .overlay-text {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+    color: white;
+    max-width: 600px;
+  }
+
+  .inspiration {
+    padding-left: 80px;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .inspiration-description {
+    padding-left: 80px;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+  }
+
+ 
