@@ -8,15 +8,23 @@
 </head>
 
 <body> 
+  <div class="hero-container">
+  <div class="slideshow">
+  <img src="serrawork.jpg" alt="background" class="bg-img active">
   <img src="SerraSculpture.jpg" alt="background" class="bg-img">
+  <img src="Walt_Disney_Concert_Hall.jpg" alt="background" class="bg-img">
+  </div>
+
   <div class="overlay-text">
     <h1><span class="slide-text line1">Building,</span><br>
         <span class="slide-text line2">Breaking,</span><br>
         <span class="slide-text line3">Becoming!</span>
     </h1>
     <p class="subhead">A sculptural typeface built to bent</p>
-    <h2 class="fontname">This is B  E  N  T</h2>
   </div>
+</div>
+
+<h2 class="fontname"><span class="small-text">This is</span><span class="tight-bent"> B E N T</span></h2>
 
   <section class="inspiration">
     <p class="inspiration">Inspired by Serra & Gehry</p>
@@ -37,10 +45,82 @@
         More than a typeface, Bent operates as a graphic form: a hybrid of
         typography and object, structure and collapse. </p>
 
-    <img src="Bent.png" class="bending-img"style="width: 90%;">
-
+    
+        <div class="upper case alphabet-picker">
+          <button class="glyph-btn">A</button>
+          <button class="glyph-btn">B</button>
+          <button class="glyph-btn">C</button>
+          <button class="glyph-btn">D</button>
+          <button class="glyph-btn">E</button>
+          <button class="glyph-btn">F</button>
+          <button class="glyph-btn">G</button>
+          <button class="glyph-btn">H</button>
+          <button class="glyph-btn">I</button>
+          <button class="glyph-btn">J</button>
+          <button class="glyph-btn">K</button>
+          <button class="glyph-btn">L</button>
+          <button class="glyph-btn">M</button>
+          <button class="glyph-btn">N</button>
+          <button class="glyph-btn">O</button>
+          <button class="glyph-btn">P</button>
+        </div>
+        <div class="upper case alphabet-row">
+          <button class="glyph-btn">Q</button>
+          <button class="glyph-btn">R</button>
+          <button class="glyph-btn">S</button>
+          <button class="glyph-btn">T</button>
+          <button class="glyph-btn">U</button>
+          <button class="glyph-btn">V</button>
+          <button class="glyph-btn">W</button>
+          <button class="glyph-btn">X</button>
+          <button class="glyph-btn">Y</button>
+          <button class="glyph-btn">Z</button>
+        </div>
+        <div class="lower case alphabet-picker">
+          <button class="glyph-btn">a</button>
+          <button class="glyph-btn">b</button>
+          <button class="glyph-btn">c</button>
+          <button class="glyph-btn">d</button>
+          <button class="glyph-btn">e</button>
+          <button class="glyph-btn">f</button>
+          <button class="glyph-btn">g</button>
+          <button class="glyph-btn">h</button>
+          <button class="glyph-btn">i</button>
+          <button class="glyph-btn">j</button>
+          <button class="glyph-btn">k</button>
+          <button class="glyph-btn">l</button>
+          <button class="glyph-btn">m</button>
+          <button class="glyph-btn">n</button>
+          <button class="glyph-btn">o</button>
+          <button class="glyph-btn">p</button>
+         </div>
+         <div class="lower case alphabet-row">
+          <button class="glyph-btn">q</button>
+          <button class="glyph-btn">r</button>
+          <button class="glyph-btn">s</button>
+          <button class="glyph-btn">t</button>
+          <button class="glyph-btn">u</button>
+          <button class="glyph-btn">v</button>
+          <button class="glyph-btn">w</button>
+          <button class="glyph-btn">x</button>
+          <button class="glyph-btn">y</button>
+          <button class="glyph-btn">z</button>
+        </div>
+        
 
 
 </body>
+
+<script>
+  const images = document.querySelectorAll(".bg-img");
+  let current = 0;
+
+  setInterval(() => {
+    images[current].classList.remove("active");
+    current = (current + 1) % images.length;
+    images[current].classList.add("active");
+  }, 4000);
+</script>
+
 
 </html>
