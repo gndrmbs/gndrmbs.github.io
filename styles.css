@@ -50,6 +50,8 @@ img.main-img {
     width: 110%;
     max-width: 1200px;
     height: auto;
+    margin-bottom: 50px;
+    
 }
 
 .corner-text {
@@ -63,6 +65,24 @@ img.main-img {
     line-height: 1.1;
     text-align: right;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 
+.corner-text:hover {
+    font-size: 220px;
+    color: rgb(110, 70, 255);
+    transition: all 0.3s ease;
+}
+
+.letter {
+    opacity: 0;
+    
+    animation: fadeIn 0.05s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }

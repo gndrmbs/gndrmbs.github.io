@@ -11,7 +11,7 @@
 </head>
 
 <body> 
-    <h1>Welcome to<br>my class site!</h1>
+    <h1 id="animated-text">Welcome to<br>my class site!</h1>
    
     <ul>
         <li>
@@ -28,8 +28,27 @@
         </li>
     </ul>  
     <div class="image-container">
-        <img src="serrawork.jpg" class="main-img">
+        <img src="SerraSculpture.jpg" class="main-img">
     </div>
 </body>
 
 </html>
+
+<script>
+    const text = "Welcome to\nmy class site!";
+    const container = document.getElementById("animated-text");
+  
+    container.innerHTML = ""; 
+  
+    [...text].forEach((char, i) => {
+      if (char === "\n") {
+        container.appendChild(document.createElement("br"));
+      } else {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.classList.add("letter");
+        span.style.animationDelay = `${i * 0.05}s`;
+        container.appendChild(span);
+      }
+    });
+  </script>
