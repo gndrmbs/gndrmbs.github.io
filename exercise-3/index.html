@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<h2>Part 1: Hovering</h2>
+
+<p>1. Change the color of this div when you hover over it:</p>
+<div class="red-circle"></div>
+
+<p>2. Change the border radius of this div when you hover over it:</p>
+<div class="hover-b-r"></div>
+
+<p>3. Widen the tracking on this text when you hover over it:</p>
+<h2 class="hover-tr">Look at me growww</h2>
+
+<p>4. Move this button up 5px when you hover over it.</p>
+<a href="#" class="hover-move-up">Beam me up</a>
+
+<p>5. Move this div 30px from the left when you hover over it:</p>
+<div class="red-square" id="hover-move"></div>
+
+<p>6. Move this div to the other side of the browser when you hover over it. (It should be 0px to the left of the right edge of the viewport.)</p>
+<div class="red-square" id="hover-move-2"></div>
+
+<p>7. Blur this image when you hover over it:</p>
+<img class="hover-blur" src="https://www.thesprucepets.com/thmb/wFSDYpmJJibM20qK2Hz7_FmtHAc=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/horse-galloping-in-grass-688899769-587673275f9b584db3a44cdf.jpg">
+
+<p>8. Change the cursor to something else when you hover over this div. Google cursor types if you're having trouble.</p>
+<div class="hover-cursor">Loading . . .</div>
+
+<p>9. For questions 1–8, add a transition for each. Make each one slower than the previous one (i.e, Question 5 takes longer to transition than Question 4, etc.)</p>
+
+<p>10. For questions 5 & 6, set the transition speed to ease-in-out. (if you're unsure, google this one.) How does it behave?</p>
+
+
+
+<h2>Part 2: Nested Targeting (No Hover)</h2>
+
+<p>11. [Without affecting any other elements on this page] make the red square a blue circle by targeting it by its parent.</p>
+<div class="blue-circle-parent">
+    <div class="red-square"></div>
+</div>
+
+<p>12. [Without affecting any other elements on this page] make the child paragraph sans-serif and red. You won't need to add a class for this one.</p>
+<div class="paragraph-parent">
+    (If this line doesn't change, you're doing it right).
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dignissim sem, eget ultricies nulla convallis eu. Pellentesque ultricies imperdiet pulvinar. Pellentesque fringilla mattis ante, non egestas ante consequat consequat. Vestibulum tempor dui ipsum, quis condimentum nisi fringilla nec. Suspendisse mattis lectus ut tristique mollis. </p>
+</div>
+
+<p>13. [Without affecting any other elements on this page] give these child divs some "presence". Do not add a class or id.</p>
+<div class="parent-presence">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<h2>Part 3: Hovering & Nested Targeting</h2>
+
+<p>14. When you hover over the parent, make the child appear.</p>
+<div class="parent-child-appear">
+    <div class="child-appear"></div>
+</div>
+
+<p>15. When you hover over the parent, move the child 30px from the left.</p>
+<div class="parent-move-1">
+    <div class="red-square"></div>
+</div>
+
+<p>16. When you hover over the parent, move the child to the other side of the browser. How is this different from question 6?</p>
+<div class="parent-move-2">
+    <div class="red-square"></div>
+</div>
+
+<p>17. When you hover over the parent, "load" the bar 80% of the way</p>
+<div class="loading-parent">
+    <div class="loading-child"></div>
+    <div class="label">Loading . . .</div>
+</div>
+
+<p>18. When you hover over the parent, rotate all the elements inside.</p>
+<div class="parent-rotate">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<p>19. Position the child "fixed" in the bottom right of the browser. When you hover over the parent, display the child. What happens if you take away position:fixed?</p>
+<div class="parent-ta-da">
+    ?
+    <div class="ta-da">Ta da!</div>
+</div>
+
+<p>20. When you hover over the parent, change the text to read "Success!". Hint: You'll have to use the display property on both text elements.</p>
+<div class="parent-text-change">
+    <h4 class="before-hover">Hover Me</h4>
+    <h4 class="on-hover">Success!</h4>
+</div>
+
+<p>21. When you hover over the paragraph, hide all of the letters "p".</p>
+<p class="tonguetwister">
+  <span>P</span>eter <span>P</span>iper <span>p</span>icked a <span>p</span>eck of <span>p</span>ickled <span>p</span>e<span>p</span><span>p</span>ers.
+    <br>A <span>p</span>eck of <span>p</span>ickled <span>p</span>e<span>p</span><span>p</span>ers <span>P</span>eter <span>P</span>iper <span>p</span>icked.
+    <br>If <span>P</span>eter <span>P</span>iper <span>p</span>icked a <span>p</span>eck of <span>p</span>ickled <span>p</span>e<span>p</span><span>p</span>ers?
+    <br>Where's the <span>p</span>eck of <span>p</span>ickled <span>p</span>e<span>p</span><span>p</span>ers <span>P</span>eter <span>P</span>iper <span>p</span>icked?
+</p>
+
+<p>22. When you hover over any of these stripes, inverse the stripes (orange becomes black, black becomes orange).</p>
+<div class="stripes">
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s1"></div>
+</div>

@@ -1,126 +1,233 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typeface-microsite</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typeface-microsite</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
-  <div class="hero-container">
-  <div class="slideshow">
-  <img src="serrawork.jpg" alt="background" class="bg-img active">
-  <img src="SerraSculpture.jpg" alt="background" class="bg-img">
-  <img src="Walt_Disney_Concert_Hall.jpg" alt="background" class="bg-img">
-  </div>
+<body>
+  <nav class="main-nav">
+    <a href="#about">About</a>
+    <a href="#application">Application</a>
+    <a href="#glyphset">Glyph set</a>
+  </nav>
 
-  <div class="overlay-text">
-    <h1><span class="slide-text line1">Building,</span><br>
+  <div class="hero-text-wrapper">
+    <div class="hero-text">
+      <h1>
+        <span class="slide-text line1">Building,</span><br>
         <span class="slide-text line2">Breaking,</span><br>
         <span class="slide-text line3">Becoming!</span>
-    </h1>
-    <p class="subhead">A sculptural typeface built to bent</p>
+      </h1>
+      <p class="subhead">A sculptural typeface built to bent</p>
+    </div>
   </div>
-</div>
 
-<h2 class="fontname"><span class="small-text">This is</span><span class="tight-bent"> B E N T</span></h2>
+  <div class="slideshow-section">
+    <div class="slideshow">
+      <img src="serrawork.jpg" alt="background" class="bg-img active">
+      <img src="SerraSculpture.jpg" alt="background" class="bg-img">
+      <img src="Walt_Disney_Concert_Hall.jpg" alt="background" class="bg-img">
+    </div>
+  </div>
 
-  <section class="inspiration">
-    <p class="inspiration">Inspired by Serra & Gehry</p>
+  <h2 class="fontname"><span class="small-text">This is</span><span class="tight-bent"> BENT</span></h2>
+
+  <section id="about" section class="inspiration-section">
+    <div class="inspiration-container">
+      <div class="background-letter">I</div>
+      <div class="inspiration-texts">
+        <p class="inspiration-title">Inspired by Serra & Gehry</p>
+        <p class="inspiration-description">
+          Bent is a sculptural display typeface that explores distortion, imbalance,
+          and fragmentation. Inspired by the torqued steel forms of Richard Serra
+          and the angular chaos of Frank Gehry's architecture, Bent twists traditional
+          typographic structures into something unfamiliar tactile, heavy, and expressive.
+          Every glyph in Bent appears as if it has been physically manipulated-cut, stretched, or compressed.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section class="inspiration-description">
-    <p class="inspiration-description">Bent is a sculptural display typeface that explores distortion, imbalance,
-        and fragmentation. Inspired by the torqued steel forms of Richard Serra
-        and the angular chaos of Frank Gehry's architecture, Bent twists traditional
-        typographic structures into something unfamiliar tactile, heavy, and
-        expressive. Every glyph in Bent appears as if it has been physically
-        manipulated-cut, stretched, or compressed. The letterforms carry the visual
-        tension of bent metal, evoking a sense of collapse and material weight. This
-        typeface resists regularity, embracing asymmetry and rupture as core design
-        principles. Bent is designed for exhibition branding, large-format editorial
-        layouts, and spatial typographic applications where its sculptural quality can
-        take center stage. It is meant to be viewed from a distance-much like the monumental works that inspired it.
-        More than a typeface, Bent operates as a graphic form: a hybrid of
-        typography and object, structure and collapse. </p>
-
-    
+  <section class="alphabet-pick-section">
+    <div class="alphabet-pick-container">
+      <div class="background-letter2">H</div>
+      <div class="alphabet-pick-right">
+        <p class="How-it-works">How it works</p>
         <div class="upper case alphabet-picker">
-          <button class="glyph-btn">A</button>
-          <button class="glyph-btn">B</button>
-          <button class="glyph-btn">C</button>
-          <button class="glyph-btn">D</button>
           <button class="glyph-btn">E</button>
-          <button class="glyph-btn">F</button>
-          <button class="glyph-btn">G</button>
-          <button class="glyph-btn">H</button>
-          <button class="glyph-btn">I</button>
-          <button class="glyph-btn">J</button>
-          <button class="glyph-btn">K</button>
-          <button class="glyph-btn">L</button>
-          <button class="glyph-btn">M</button>
-          <button class="glyph-btn">N</button>
           <button class="glyph-btn">O</button>
-          <button class="glyph-btn">P</button>
-        </div>
-        <div class="upper case alphabet-row">
-          <button class="glyph-btn">Q</button>
           <button class="glyph-btn">R</button>
           <button class="glyph-btn">S</button>
-          <button class="glyph-btn">T</button>
-          <button class="glyph-btn">U</button>
-          <button class="glyph-btn">V</button>
-          <button class="glyph-btn">W</button>
           <button class="glyph-btn">X</button>
-          <button class="glyph-btn">Y</button>
-          <button class="glyph-btn">Z</button>
-        </div>
-        <div class="lower case alphabet-picker">
-          <button class="glyph-btn">a</button>
-          <button class="glyph-btn">b</button>
-          <button class="glyph-btn">c</button>
-          <button class="glyph-btn">d</button>
           <button class="glyph-btn">e</button>
-          <button class="glyph-btn">f</button>
-          <button class="glyph-btn">g</button>
-          <button class="glyph-btn">h</button>
-          <button class="glyph-btn">i</button>
-          <button class="glyph-btn">j</button>
-          <button class="glyph-btn">k</button>
-          <button class="glyph-btn">l</button>
-          <button class="glyph-btn">m</button>
-          <button class="glyph-btn">n</button>
           <button class="glyph-btn">o</button>
-          <button class="glyph-btn">p</button>
-         </div>
-         <div class="lower case alphabet-row">
-          <button class="glyph-btn">q</button>
           <button class="glyph-btn">r</button>
           <button class="glyph-btn">s</button>
-          <button class="glyph-btn">t</button>
-          <button class="glyph-btn">u</button>
-          <button class="glyph-btn">v</button>
-          <button class="glyph-btn">w</button>
           <button class="glyph-btn">x</button>
-          <button class="glyph-btn">y</button>
-          <button class="glyph-btn">z</button>
         </div>
-        
+        <div class="transition-wrapper">
+          <div class="transition-container">
+            <img class="plate show" id="step1" src="R.png" />
+            <img class="plate" id="step2" src="R-2.png" />
+            <img class="plate" id="step3" src="R bent.png" />
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <section class="voice and tone">
+      <div class="voice-tone-container">
+        <div class="background-letter3">V</div>
+        <div class="voice-tone-texts">
+          <p class="voice-tone">Voice & Tone</p>
+          <div class="floating-keywords">
+            <span class="keyword keyword1">Sculptural</span>
+            <span class="keyword keyword2">Imbalanced</span>
+            <span class="keyword keyword3">Fragmented</span>
+            <span class="keyword keyword4">Tactile</span>
+            <span class="keyword keyword5">Angular</span>
+            <span class="keyword keyword6">Asymmetrical</span>
+          </div>
+  </section>
+
+
+  <h2 id="application" h2 class="application"> Application</h2>
+
+<div class="image-overlay-wrapper">
+  <img src="application1.jpg" alt="Application 1 layout" class="application-img">
+  <div class="overlay-caption">Exhibition Billboard</div>
+</div>
+
+<div class="image-overlay-wrapper">
+  <img src="application2.jpg" alt="Application 2 layout" class="application-img">
+  <div class="overlay-caption">Exhibition Ticket</div>
+</div>
+
+<div class="image-overlay-wrapper">
+  <img src="application3.jpg" alt="Application 3 layout" class="application-img">
+  <div class="overlay-caption">Exhibition Catalogue</div>
+</div>
+
+<div class="image-overlay-wrapper">
+  <img src="application4.jpg" alt="Application 4 layout" class="application-img">
+  <div class="overlay-caption">Tote Bag</div>
+</div>
+
+
+<section id="glyphset" section class="glyphset-section">
+  <h2 class="glyphset">Glyph Set</h2>
+
+  <div class="glyph-row uppercase-row">
+    A B C D E F G H I J K L M N O P
+  </div>
+
+  <div class="glyph-row uppercase-row">
+    Q R S T U V W X Y Z
+  </div>
+
+  <div class="glyph-row lowercase-row">
+    a b c d e f g h i j k l m n o p
+  </div>
+
+  <div class="glyph-row lowercase-row">
+    q r s t u v w x s y z
+  </div>
+
+  <div class="glyph-row punctuation-row">
+    . , ; : - ' " / ( ) [ ] @ # ? ! &
+  </div>
+</section>
+
+<div class="glyph-animate-container">
+<div class="glyph-animate" id="glyph-animate-box"><span>A</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+  <script>
+    const images = document.querySelectorAll(".bg-img");
+    let current = 0;
+    setInterval(() => {
+      images[current].classList.remove("active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("active");
+    }, 4000);
+
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const step3 = document.getElementById("step3");
+    const transitionContainer = document.querySelector(".transition-container");
+
+    const buttons = document.querySelectorAll(".glyph-btn");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const letter = button.textContent.trim();
+        let baseName;
+        if (letter === letter.toLowerCase()) {
+          baseName = `lower ${letter}`;
+        } else {
+          baseName = letter;
+        }
+
+        step1.src = `${baseName}.png`;
+        step2.src = `${baseName}-2.png`;
+        step3.src = `${baseName} bent.png`;
+
+        transitionContainer.style.display = "block";
+        step1.classList.add("show");
+        step2.classList.remove("show", "transforming");
+        step3.classList.remove("show");
+
+        setTimeout(() => {
+          step2.classList.add("show", "transforming");
+          step1.classList.remove("show");
+        }, 1500);
+
+        setTimeout(() => {
+          step2.classList.remove("show", "transforming");
+          step3.classList.add("show");
+        }, 2800);
+      });
+    });
+
+    transitionContainer.style.display = "none";
+
+
+
+    const glyphBox = document.getElementById("glyph-animate-box");
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let index = 0;
+
+setInterval(() => {
+ 
+  glyphBox.innerHTML = "";
+
+
+  const newSpan = document.createElement("span");
+  newSpan.textContent = alphabet[index];
+  newSpan.style.display = "inline-block";
+  newSpan.style.opacity = "1";
+  newSpan.style.transition = "opacity 0.5s ease";
+
+  glyphBox.appendChild(newSpan);
+
+  index = (index + 1) % alphabet.length;
+}, 1000);
+
+
+
+
+  </script>
 </body>
-
-<script>
-  const images = document.querySelectorAll(".bg-img");
-  let current = 0;
-
-  setInterval(() => {
-    images[current].classList.remove("active");
-    current = (current + 1) % images.length;
-    images[current].classList.add("active");
-  }, 4000);
-</script>
-
 
 </html>
