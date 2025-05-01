@@ -530,6 +530,15 @@ h1 {
   
 }
 
+.copyright-img {
+  width: 10%;
+  height: auto;
+  text-align: center;
+  display:block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
 
   
 
